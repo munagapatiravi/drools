@@ -6,12 +6,24 @@ package myteam.decision_model;
 
 public class Counter2 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Counter2() {
-    }
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
+	public Counter2() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public Counter2(java.lang.String name) {
+		this.name = name;
+	}
 
 }
