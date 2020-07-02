@@ -1,0 +1,20 @@
+<project-repositories>
+  <repositories>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>C:\Users\pavanpa\Downloads\Pavan\JBPM\OBP\business-central\jboss-eap-7.1\bin\repositories\kie\</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>remote-mirror</id>
+        <url>http://incesky005:8081/nexus/content/repositories/public</url>
+        <source>PROJECT</source>
+      </metadata>
+    </repository>
+  </repositories>
+</project-repositories>
