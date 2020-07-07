@@ -8,10 +8,12 @@ public class Counter implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	
 	private java.lang.String name;
-	
+
 	private int count;
+
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.String id;
 
 	public Counter() {
 	}
@@ -32,14 +34,23 @@ public class Counter implements java.io.Serializable {
 		this.count = count;
 	}
 
-	public Counter(java.lang.String name, int count) {
-		this.name = name;
-		this.count = count;
-	}
-	
 	@Override
 	public String toString() {
 		return "Counter [name=" + name + ", count=" + count + "]";
+	}
+
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public Counter(java.lang.String name, int count, java.lang.String id) {
+		this.name = name;
+		this.count = count;
+		this.id = id;
 	}
 
 }
